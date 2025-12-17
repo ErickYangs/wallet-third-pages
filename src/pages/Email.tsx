@@ -10,7 +10,7 @@ export default function Email() {
   const [lastEmail, setLastEmail] = useState<string>("");
   const containerRef = useRef<HTMLDivElement>(null);
   const embedRef = useRef<TaskOnEmbed | null>(null);
-  const [isEmbedInitialized, setIsEmbedInitialized] = useState(false);
+  // const [setIsEmbedInitialized] = useState(false);
 
   // 处理邮箱确认
   const handleEmailConfirm = async (email: string) => {
@@ -111,13 +111,13 @@ export default function Email() {
       setLastEmail(email);
 
 
-      setIsEmbedInitialized(true);
+      // setIsEmbedInitialized(true);
     });
 
     return () => {
       embed.destroy();
       embedRef.current = null;
-      setIsEmbedInitialized(false);
+      // setIsEmbedInitialized(false);
     };
   }, []);
 

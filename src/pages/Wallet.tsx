@@ -74,7 +74,6 @@ export default function Wallet() {
     const embed = new TaskOnEmbed({
       baseUrl: import.meta.env.VITE_PUBLIC_TASKON_BASE_URL!,
       containerElement: containerRef.current,
-      oauthToolUrl: 'https://stage.generalauthservice.com'
     });
 
     const handleLoginRequired = () => {
