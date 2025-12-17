@@ -137,7 +137,7 @@ export default function Wallet() {
   };
 
   return (
-    <div style={{ padding: "20px", maxWidth: "600px", margin: "0 auto" }}>
+    <div style={{ padding: "20px", maxWidth: "1800px", margin: "0 auto" }}>
       <h1>钱包页面</h1>
 
       {!isConnected ? (
