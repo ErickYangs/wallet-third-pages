@@ -4,7 +4,7 @@ export default function Social() {
   const { address, isConnected } = useAccount()
 
   return (
-    <div style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
+    <div style={{ padding: '20px', maxWidth: '1800px', margin: '0 auto' }}>
       <h1>社交页面</h1>
       
       {!isConnected ? (

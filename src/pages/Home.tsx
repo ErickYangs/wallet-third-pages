@@ -5,7 +5,7 @@ export default function Home() {
   const { isConnected } = useAccount()
 
   return (
-    <div style={{ padding: '20px', maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+    <div style={{ padding: '20px', maxWidth: '1800px', margin: '0 auto', textAlign: 'center' }}>
       <h1>欢迎使用Web3钱包应用</h1>
       
       <div style={{ 
