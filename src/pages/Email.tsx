@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import Dialog from "../components/Dialog";
-import { TaskOnEmbed,  } from "@taskon/embed";
+import { TaskOnEmbed } from "@taskon/embed";
 import "./Email.css";
 import { signMessage } from "../utils/signMessage.ts";
 
@@ -91,7 +91,6 @@ export default function Email() {
     const embed = new TaskOnEmbed({
       baseUrl: import.meta.env.VITE_PUBLIC_TASKON_BASE_URL!,
       containerElement: containerRef.current,
-      oauthToolUrl: "https://stage.generalauthservice.com",
     });
 
     const handleRouteChanged = (fullPath: string) => {
