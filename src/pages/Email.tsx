@@ -67,7 +67,7 @@ export default function Email() {
   
   const logout = () => {
     if (!embedRef.current) return;
-    embedRef.current.logout();
+    embedRef.current.logout({ clearAuth: true });
     setIsDialogOpen(false);
     setLastEmail('');
     localStorage.removeItem('taskon_email_login_state');

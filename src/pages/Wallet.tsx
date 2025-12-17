@@ -130,7 +130,7 @@ export default function Wallet() {
 
   const logout = () => {
     if (!embedRef.current) return;
-    embedRef.current.logout();
+    embedRef.current.logout({ clearAuth: true });
     setIsEvmLoggedIn(false);
     localStorage.removeItem("taskon_evm_login_state");
     disconnect();
