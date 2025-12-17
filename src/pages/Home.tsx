@@ -1,5 +1,7 @@
 import { useAccount } from 'wagmi'
 import { Link } from 'react-router-dom'
+import Wallet from './Wallet'
+
 
 export default function Home() {
   const { isConnected } = useAccount()
@@ -7,7 +9,7 @@ export default function Home() {
   return (
     <div style={{ padding: '20px', maxWidth: '1800px', margin: '0 auto', textAlign: 'center' }}>
       <h1>欢迎使用Web3钱包应用</h1>
-      
+      <Wallet />
       <div style={{ 
         backgroundColor: '#e3f2fd', 
         padding: '30px', 
